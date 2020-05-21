@@ -22,11 +22,18 @@ const connection = mysql.createConnection({
   port: conf.port,
   database: conf.database,
   dateStrings: conf.dateStrings,
-  multipleStatements: true
+  multipleStatements: true,
 });
 
 connection.connect();
 
+app.get("/api/shops", (req, res) => {
+  connection.query("SELECT * FROM SHOP_INFO", (err, rows, fields) => {
+    res.send(rows);
+  });
+});
+
+/*
 app.get("/api/users", (req, res) => {
   connection.query("SELECT * FROM user_info", (err, rows, fields) => {
     res.send(rows);
@@ -331,5 +338,6 @@ app.post("/api/itemDelete", upload.array(), (req, res) => {
     res.send(rows);
   });
 });
+*/
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
