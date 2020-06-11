@@ -12,7 +12,8 @@ import Modal from "../src/components/Modal";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/shops";
+const API_URL =
+  "http://ec2-13-209-15-173.ap-northeast-2.compute.amazonaws.com:5000/api/shops";
 
 const District = ({ data }) => {
   const router = useRouter();

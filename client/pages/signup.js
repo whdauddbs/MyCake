@@ -8,7 +8,8 @@ import AllCheckBox from "../components/form/checkbox/allCheck";
 import CheckBox from "../components/form/checkbox/index";
 import axios from "axios";
 
-const apiURL = "http://localhost:5000/api";
+const apiURL =
+  "http://ec2-13-209-15-173.ap-northeast-2.compute.amazonaws.com:5000/api";
 const idRegex = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
 const pwdRegex = /(?=.*\d)(?=.*[~`!@#$%\^&*()-+=])(?=.*[a-z]).{8,}$/;
 

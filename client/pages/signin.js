@@ -5,7 +5,8 @@ import Loading from "../components/layOut/loading";
 import Input from "../components/form/input/index";
 import axios from "axios";
 
-const apiURL = "http://localhost:5000/api";
+const apiURL =
+  "http://ec2-13-209-15-173.ap-northeast-2.compute.amazonaws.com:5000/api";
 const emailRegex = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
 const pwdRegex = /(?=.*\d)(?=.*[~`!@#$%\^&*()-+=])(?=.*[a-z]).{8,}$/;
 
@@ -54,7 +55,7 @@ const SingInPage = () => {
         console.log(res);
         if (res.data[0]) {
           // 로그인 넣기
-          //Router.push("/");
+          Router.push("/");
         } else {
           alert("이메일과 비밀번호를 확인해주세요.");
         }
