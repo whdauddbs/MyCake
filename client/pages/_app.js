@@ -102,7 +102,7 @@ class CakeMap extends App {
       <>
         <GlobalStyle />
         <Head>
-          <title>Cake Map</title>
+          <title>MyCake</title>
           <link rel="shortcut icon" href="favicon.ico"></link>
         </Head>
         <BestWrapper>

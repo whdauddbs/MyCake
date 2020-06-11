@@ -17,7 +17,7 @@ export default class MyDocument extends Document {
             name="naver-site-verification"
             content="3ea05ed2aa4dd196b25557ca12aff0ac8a6202ae"
           />
-          <meta property="og:title" content={"Cake Map"} />
+          <meta property="og:title" content={"MyCake"} />
           <meta property="og:description" content={siteDescription} />
         </Head>
         <body>
