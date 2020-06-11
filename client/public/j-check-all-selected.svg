@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <g id="prefix__J_CheckAll_selected" transform="translate(-19 -384)">
+        <path id="prefix__circle" d="M9 0a9 9 0 1 1-9 9 9 9 0 0 1 9-9z" transform="translate(20.341 384.82)" style="fill:#77d2d2"/>
+        <path id="prefix__check" d="M4.1 7.123L0 3.027.831 2.2 4.1 5.4 9.5 0l.831.831z" transform="translate(23.837 389.944)" style="fill:#fff"/>
+        <path id="prefix__사각형_1984" d="M0 0H20V20H0z" data-name="사각형 1984" transform="translate(19 384)" style="fill:none"/>
+    </g>
+</svg>

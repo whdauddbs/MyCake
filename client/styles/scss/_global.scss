@@ -1,0 +1,253 @@
+html, body, #__next {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  resize: none;
+  outline: 0;
+}
+
+body {
+  font-family: "NotoSansCJ";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -ms-overflow-style: none; // IE에서 스크롤바 감춤
+  &::-webkit-scrollbar {
+    display: none !important; // 윈도우 크롬 등
+  }
+}
+
+ul,
+ol,
+dl,
+menu,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  &:hover,&:active{
+    text-decoration: none;
+  }
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+}
+
+legend,
+caption {
+  display: none;
+}
+
+img,
+fieldset,
+iframe {
+  border: 0;
+}
+
+img {
+  vertical-align: top;
+}
+
+// form
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+}
+
+input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+          border:none;
+          background-image:none;
+          background-color:transparent;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+/* IE10 이상에서 input box 에 추가된 지우기 버튼 제거 */
+input::-ms-clear { display: none; }
+
+/* input type number 에서 화살표 제거 */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+}
+
+textarea {
+  height: auto;
+  overflow: auto;
+  resize: none;
+}
+
+input.error {
+  border-color: #ef5350;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input.error:focus {
+  border-color: #ef5350;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  vertical-align: middle;
+  outline: none;
+}
+
+input[type=range] {
+  -webkit-appearance: none; /* 기본슬라이드 숨기기*/
+  width: 100%; /* Firefox에서는 특정한 넓이가 필요*/
+  background: transparent; /* Chrome에서 투명하게 출력 */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; /* input range에 포커스 되었을 경우 기본 블러처리 제거 */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  /* IE에서 기본슬라이드 숨기기  */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input::placeholder {
+  color: $gray;
+}
+
+select[disabled],
+input[disabled],
+input[readOnly],
+textarea[readOnly],
+textarea[disabled] {
+  color: #969696;
+  border: 0;
+  background-color: #e0e0e0;
+  opacity: 1;
+  cursor: not-allowed !important;
+}
+
+select.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;  
+}
+
+select::-ms-expand {
+  display: none;
+  appearance: none;
+}
+
+button {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  *overflow: visible;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+// input:-webkit-autofill,
+// input:-webkit-autofill:hover,
+// input:-webkit-autofill:focus,
+// input:-webkit-autofill:active  {
+//     -webkit-box-shadow: 0 0 0 30px $dark inset !important;
+
+// }
+// input:-webkit-autofill {
+//   -webkit-text-fill-color:  $white !important;
+// }
+
+.btn,
+.btn:hover,
+.btn:active,
+.btn:focus,
+.btn:active:focus {
+  outline: 0px;
+  box-shadow: none;
+  font-family: inherit;
+}
+
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: '';
+  overflow: hidden;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0.3vw;  /* 세로축 스크롤바 길이 */
+  height: 0.3vh;  /* 가로축 스크롤바 길이 */
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  // border-radius: 1vw;
+  background-color: #d8d8d8;
+}

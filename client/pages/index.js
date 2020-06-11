@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import Logo from "../src/components/images/Logo";
 import Info from "../src/components/images/MainInfo";
-import Text from "../src/components/Text";
 import Button from "../src/components/buttons/district";
 import Footer from "../src/components/Footer";
+import Router from "next/router";
 
 export default function Home() {
   return (
@@ -15,9 +15,17 @@ export default function Home() {
             width: "12rem",
             height: "auto",
             margin: "1.9rem 0rem 2.4rem 2.2rem",
-            objectFit: "contain"
+            objectFit: "contain",
           }}
         ></Logo>
+        <img
+          src="m-kakaologin.svg"
+          style={{
+            cursor: "pointer",
+          }}
+          onClick={() => Router.push("/signin")}
+          style={{ width: "40px", margin: "1.5rem 0rem 0rem 16rem" }}
+        />
         <InfoWrapper>
           <img src="Headline.svg" />
           <Info style={{ width: "100%", margin: "1rem 0 0 0" }}></Info>

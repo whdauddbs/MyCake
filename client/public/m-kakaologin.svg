@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="39" viewBox="0 0 28 39">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e5dd4a"/>
+      <stop offset="0.024" stop-color="#e4dc47"/>
+      <stop offset="0.178" stop-color="#e4d83b"/>
+      <stop offset="0.396" stop-color="#e4d534"/>
+      <stop offset="1" stop-color="#e4d533"/>
+    </linearGradient>
+  </defs>
+  <g id="M_Kakaologin" transform="translate(-308 -26)">
+    <text id="Login" transform="translate(311 63)" fill="#e4d83b" font-size="8" font-family="NotoSans-SemiBold, Noto Sans" font-weight="600"><tspan x="0" y="0">Login</tspan></text>
+    <g id="kakao_login_icon_" data-name="kakao_login_icon " transform="translate(6 1)">
+      <circle id="타원_1" data-name="타원 1" cx="14" cy="14" r="14" transform="translate(302 25)" fill="url(#linear-gradient)"/>
+      <path id="패스_31" data-name="패스 31" d="M703.4,36.151c-5.71,0-10.34,3.66-10.34,8.174,0,2.938,1.961,5.514,4.905,6.955-.216.807-.783,2.925-.9,3.378-.141.562.205.555.432.4.178-.119,2.833-1.924,3.979-2.7a13.055,13.055,0,0,0,1.919.141c5.71,0,10.34-3.66,10.34-8.174S709.115,36.151,703.4,36.151Z" transform="translate(-387.505 -6.658)" fill="#fff"/>
+      <text id="KaKao" transform="translate(307 40)" fill="#e4d83b" font-size="6" font-family="NotoSans-SemiBold, Noto Sans" font-weight="600"><tspan x="0" y="0">KaKao</tspan></text>
+    </g>
+  </g>
+</svg>

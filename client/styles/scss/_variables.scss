@@ -1,0 +1,44 @@
+// Variables
+$white: #fff !default;
+$black: #000 !default;
+$pink: #f18288 !default;
+$gray: #dedede !default;
+$green: #77d2d2 !default;
+
+// Fonts
+@font-face {
+  font-family: "NotoSansCJ";
+  src: url("/fonts/NotoSansCJ/NotoSansCJKkr-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "NotoSansCJ-B";
+  src: url("/fonts/NotoSansCJ/NotoSansCJKkr-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "NotoSansCJ-R";
+  src: url("/fonts/NotoSansCJ/NotoSansCJKkr-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "NotoSansCJ-L";
+  src: url("/fonts/NotoSansCJ/NotoSansCJKkr-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "YanoljaYacheB";
+  src: url("/fonts/YanoljaYache/YanoljaYacheB.ttf") format("truetype");
+  // src: url('/static/fonts/YanoljaYache/YanoljaYacheB.otf') format("opentype");
+}
+
+@font-face {
+  font-family: "YanoljaYacheR";
+  src: url("/fonts/YanoljaYache/YanoljaYacheR.ttf") format("truetype");
+  // src: url('/static/fonts/YanoljaYache/YanoljaYacheR.otf') format("opentype");
+}
+
+@font-face {
+  font-family: "TmonMonsori";
+  src: url("/fonts/TmonFont/TmonMonsori.ttf") format("truetype");
+}

@@ -9,7 +9,7 @@ export default function ImageViewer({ link, s1, s2, s3 }) {
       style={{
         width: "100%",
         height: "fit-content",
-        position: "relative"
+        position: "relative",
       }}
     >
       <iframe
@@ -37,7 +37,7 @@ export default function ImageViewer({ link, s1, s2, s3 }) {
         style={{ float: "left", width: "33%", height: "auto" }}
       />
       <Overlay
-        onClick={e => {
+        onClick={(e) => {
           window.open(link);
           e.stopPropagation();
           console.log("click image");

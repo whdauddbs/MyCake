@@ -4,10 +4,11 @@ import Head from "next/head";
 import Router from "next/router";
 import ReactGA from "react-ga";
 import "./icon.css";
+import "../styles/style.scss";
 
 import styled, { createGlobalStyle } from "styled-components";
 
-Router.onRouteChangeComplete = url => {
+Router.onRouteChangeComplete = (url) => {
   const pathName = window.location.pathname;
   ReactGA.initialize("UA-160024128-1");
   ReactGA.set({ page: pathName });
@@ -76,7 +77,7 @@ const GlobalStyle = createGlobalStyle`
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'NotoSansCJ', sans-serif;
   font-size: 0.1rem;
   background-color:#ccc;
 }

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="8" viewBox="0 0 38 8">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#f18288}
+        </style>
+    </defs>
+    <g id="prefix__LodUnder" transform="translate(-161 -416)">
+        <circle id="prefix__lod1" cx="4" cy="4" r="4" class="prefix__cls-1" transform="translate(161 416)"/>
+        <circle id="prefix__lod2" cx="4" cy="4" r="4" class="prefix__cls-1" transform="translate(176 416)"/>
+        <circle id="prefix__lod3" cx="4" cy="4" r="4" class="prefix__cls-1" transform="translate(191 416)"/>
+    </g>
+</svg>

@@ -34,12 +34,6 @@ app.get("/api/shops", (req, res) => {
 });
 
 /*
-app.get("/api/users", (req, res) => {
-  connection.query("SELECT * FROM user_info", (err, rows, fields) => {
-    res.send(rows);
-  });
-});
-
 app.get("/api/userMylist", (req, res) => {
   connection.query("SELECT * FROM user_mylist", (err, rows, fields) => {
     res.send(rows);
@@ -122,18 +116,34 @@ app.get("/api/mainEpisodes", (req, res) => {
     res.send(rows);
   });
 });
+*/
 
-app.post("/api/users", upload.array(), (req, res) => {
-  let sql = "INSERT INTO user_info VALUES (null, ?, ?, ?)";
-  let id = req.body.google_id;
-  let name = req.body.google_name;
-  let email = req.body.google_email;
-  let params = [id, name, email];
+app.post("/api/signup", upload.array(), (req, res) => {
+  let sql = "INSERT INTO USER_INFO VALUES (null, ?, ?, ?, ?, ?, ?)";
+  let id = req.body.id;
+  let name = req.body.name;
+  let phone = req.body.phone;
+  let shop_name = req.body.shop_name;
+  let shop_link = req.body.shop_link;
+  let password = req.body.password;
+  let params = [id, name, phone, shop_name, shop_link, password];
+  connection.query(sql, params, (err, rows, fields) => {
+    if (rows) res.send(rows);
+    else res.sendStatus(409);
+  });
+});
+
+app.post("/api/signin", (req, res) => {
+  let sql =
+    "SELECT id, name, phone, shop_name, shop_link FROM USER_INFO WHERE id = ? AND password = ?";
+  let id = req.body.id;
+  let password = req.body.password;
+  let params = [id, password];
   connection.query(sql, params, (err, rows, fields) => {
     res.send(rows);
   });
 });
-
+/*
 app.post("/api/dramas", upload.array(), (req, res) => {
   let sql =
     "INSERT INTO drama_info VALUES (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
