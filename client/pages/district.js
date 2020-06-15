@@ -88,7 +88,7 @@ const District = ({ data }) => {
                               font="TmonMonsori"
                               size="1.6rem"
                             >
-                              {value.name} >
+                              {value.name}
                             </Text>
                           </A>
                         </NameTag2>

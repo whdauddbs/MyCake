@@ -26,6 +26,14 @@ export default function Home() {
           onClick={() => Router.push("/signin")}
           style={{ width: "40px", margin: "1.5rem 0rem 0rem 16rem" }}
         />
+        <img
+          src="action.png"
+          style={{
+            cursor: "pointer",
+          }}
+          onClick={() => Router.push("/action")}
+          style={{ width: "40px", margin: "1.5rem 10rem 10rem 16rem" }}
+        />
         <InfoWrapper>
           <img src="Headline.svg" />
           <Info style={{ width: "100%", margin: "1rem 0 0 0" }}></Info>
