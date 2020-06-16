@@ -14,7 +14,7 @@ export default function Header(props) {
             height: "1.4rem",
             position: "absolute",
             left: "2rem",
-            top: "3.8rem"
+            top: "3.8rem",
           }}
           fill="#ddd"
         ></BackIcon>
@@ -25,6 +25,14 @@ export default function Header(props) {
           {props.name}
         </Text>
       </NameWrapper>
+      <img
+        src="action.png"
+        style={{
+          cursor: "pointer",
+          margin: "1rem 0rem 0rem 20rem",
+        }}
+        onClick={() => Router.push("/action1")}
+      />
     </Wrapper>
   );
 }

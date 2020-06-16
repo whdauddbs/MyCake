@@ -45,7 +45,6 @@ const District = ({ data }) => {
         <div
           style={{
             width: "100%",
-            marginTop: "4rem",
             display: "flex",
             boxSizing: "border-box",
             paddingLeft: "49%",
@@ -55,7 +54,13 @@ const District = ({ data }) => {
         </div>
       </TopWrapper>
       <ImageWrapper>
-        <div style={{ width: "fit-content", position: "relative" }}>
+        <div
+          style={{
+            width: "fit-content",
+            position: "relative",
+            marginTop: "2rem",
+          }}
+        >
           <img src={src} />
           {data &&
             data.map((value, index) =>
