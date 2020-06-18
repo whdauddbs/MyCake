@@ -3,14 +3,7 @@ import styled from "styled-components";
 import Info from "./images/FooterInfo";
 
 export default function Footer() {
-  return (
-    <Wrapper>
-      <Info
-        style={{ width: "13.5rem", height: "4rem", padding: "0 auto" }}
-      ></Info>
-      <img src="FooterCopy.svg"></img>
-    </Wrapper>
-  );
+  return <Wrapper></Wrapper>;
 }
 
 const Wrapper = styled.footer`
